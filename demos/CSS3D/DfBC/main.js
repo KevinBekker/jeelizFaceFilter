@@ -296,8 +296,8 @@ function main() {
                     function (e) {
                         switch (e.key) {
                             // Blur effects
-                            case "1":
-                                addClass(DIV, "blurEffect1");
+                            case "0":
+                                addClass(DIV, "reset");
                                 removeClass(DIV, "blurEffect2");
                                 removeClass(DIV, "blurEffect3");
                                 removeClass(DIV, "blurEffect4");

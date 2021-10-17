@@ -15,12 +15,18 @@
     <!-- INCLUDE DEMO SCRIPT -->
     <script src="./main.js"></script>
 
-    <!-- INCLUDE FORK ME ON GITHUB BANNER -->
-    <script src="../../appearance/widget.js"></script>
+    <script src="three.min.js"></script>
 
     <link rel="stylesheet" href="../../appearance/style.css" type="text/css" />
 
     <style type='text/css'>
+
+
+      body {
+        background: black;
+      }
+
+      /* Following  */
     #jeelizFaceFilterFollow {
       display: block;
       position: absolute; z-index: 1000;
@@ -28,22 +34,27 @@
       height: 60px; width: 60px;
     }
 
-    .blurEffect1 {
+    .reset {
       backdrop-filter: blur(0rem);
     }
     .blurEffect2 {
+      border: 0px solid white!important;
       backdrop-filter: blur(2rem);
     }
     .blurEffect3 {
+      border: 0px solid white!important;
       backdrop-filter: blur(4rem);
     }
     .blurEffect4 {
+      border: 0px solid white!important;
       backdrop-filter: blur(6rem);
     }
     .blurEffect5 {
+      border: 0px solid white!important;
       backdrop-filter: blur(8rem);
     }
     .blurEffect6 {
+      border: 0px solid white!important;
       backdrop-filter: blur(10rem);
     }
 
@@ -59,6 +70,7 @@
   </head>
   
   <body onload="main()">
+    
     <canvas width="1024" height="1024" id='jeeFaceFilterCanvas'></canvas>
 
     <div id='jeelizFaceFilterFollow'>
