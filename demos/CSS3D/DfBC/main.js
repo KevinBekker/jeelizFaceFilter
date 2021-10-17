@@ -297,12 +297,16 @@ function main() {
                         switch (e.key) {
                             // Blur effects
                             case "0":
-                                addClass(DIV, "reset");
                                 removeClass(DIV, "blurEffect2");
                                 removeClass(DIV, "blurEffect3");
                                 removeClass(DIV, "blurEffect4");
                                 removeClass(DIV, "blurEffect5");
                                 removeClass(DIV, "blurEffect6");
+                                removeClass(DIV, "grey2");
+                                removeClass(DIV, "grey3");
+                                removeClass(DIV, "grey4");
+                                removeClass(DIV, "grey5");
+                                removeClass(DIV, "grey6");
                                 break;
                             case "2":
                                 addClass(DIV, "blurEffect2");
@@ -343,6 +347,43 @@ function main() {
                                 removeClass(DIV, "blurEffect4");
                                 removeClass(DIV, "blurEffect5");
                                 removeClass(DIV, "blurEffect2");
+                                break;
+
+                            // Greyscale
+                            case "q":
+                                addClass(DIV, "grey2");
+                                removeClass(DIV, "grey3");
+                                removeClass(DIV, "grey4");
+                                removeClass(DIV, "grey5");
+                                removeClass(DIV, "grey6");
+                                break;
+                            case "w":
+                                addClass(DIV, "grey3");
+                                removeClass(DIV, "grey2");
+                                removeClass(DIV, "grey4");
+                                removeClass(DIV, "grey5");
+                                removeClass(DIV, "grey6");
+                                break;
+                            case "e":
+                                addClass(DIV, "grey4");
+                                removeClass(DIV, "grey3");
+                                removeClass(DIV, "grey2");
+                                removeClass(DIV, "grey5");
+                                removeClass(DIV, "grey6");
+                                break;
+                            case "r":
+                                addClass(DIV, "grey5");
+                                removeClass(DIV, "grey3");
+                                removeClass(DIV, "grey4");
+                                removeClass(DIV, "grey2");
+                                removeClass(DIV, "grey6");
+                                break;
+                            case "t":
+                                addClass(DIV, "grey6");
+                                removeClass(DIV, "grey3");
+                                removeClass(DIV, "grey4");
+                                removeClass(DIV, "grey5");
+                                removeClass(DIV, "grey2");
                                 break;
                             default:
                                 break;
