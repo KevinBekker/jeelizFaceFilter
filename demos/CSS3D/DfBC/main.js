@@ -9,7 +9,7 @@ const SETTINGS = {
     detectionHysteresis: 0.1,
     mouthOpeningThreshold: 0.5, // sensibility of mouth opening, between 0 and 1
     mouthOpeningHysteresis: 0.05,
-    scale: [1, 1], // scale of the DIV along horizontal and vertical axis
+    scale: [3, 3], // scale of the DIV along horizontal and vertical axis
     positionOffset: [0, 0, -0.2], // set a 3D position fofset to the div
 };
 
@@ -295,6 +295,7 @@ function main() {
                     "keydown",
                     function (e) {
                         switch (e.key) {
+                            // Blur effects
                             case "1":
                                 addClass(DIV, "blurEffect1");
                                 removeClass(DIV, "blurEffect2");
