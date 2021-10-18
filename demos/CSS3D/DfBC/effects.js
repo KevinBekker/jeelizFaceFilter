@@ -1,7 +1,5 @@
 "use strict";
 
-"use strict";
-
 // SETTINGS of this demo:
 const SETTINGS = {
     rotationOffsetX: 0, // negative -> look upper. in radians
@@ -205,8 +203,8 @@ function init_scene(spec) {
 
 
 // launched by body.onload():
-function main() {
-    console.warn('This is the main file');
+function effectMain() {
+    console.warn('This is the effects file!');
     DIV = document.getElementById("jeelizFaceFilterFollow");
     if (!DIV) {
         alert(
@@ -305,7 +303,7 @@ function main() {
                     function (e) {
                         switch (e.key) {
                             // Blur effects
-                            case "1":
+                            case "0":
                                 removeClass(DIV, "blurEffect2");
                                 removeClass(DIV, "blurEffect3");
                                 removeClass(DIV, "blurEffect4");
@@ -394,6 +392,20 @@ function main() {
                                 removeClass(DIV, "grey5");
                                 removeClass(DIV, "grey2");
                                 break;
+                                case "/":
+                                    addClass(DIV, "hidden");
+                                    removeClass(DIV, "grey3");
+                                    removeClass(DIV, "grey4");
+                                    removeClass(DIV, "grey5");
+                                    removeClass(DIV, "grey2");
+                                    removeClass(DIV, "grey6");
+                                    removeClass(DIV, "blurEffect6");
+                                removeClass(DIV, "blurEffect1");
+                                removeClass(DIV, "blurEffect3");
+                                removeClass(DIV, "blurEffect4");
+                                removeClass(DIV, "blurEffect5");
+                                removeClass(DIV, "blurEffect2");
+                                    break;
                             default:
                                 break;
                         }
