@@ -47,6 +47,8 @@ function init_threeScene(spec) {
       CLOUDMESH.frustumCulled = false;
       CLOUDMESH.renderOrder = 10000;
 
+// ADD OR REMOVE CLOUDS BELOW
+
       // ...same here for the second cloud
       CLOUDMESH2 = CLOUDMESH.clone();
       CLOUDMESH2.scale.multiplyScalar(0.4);
@@ -116,6 +118,8 @@ function init_threeScene(spec) {
 
         PARTICLESOBJ3D.add(particle, particle2, particle3);
       }
+
+      // RAINDROPS FALLING
 
       PARTICLES.forEach((part, index) => {
         animateParticleCloud(part, index);
